@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Purchase Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#accueil-section">Accueil</a></li>
+                <li><a href="index.html#catalogue-section">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section id="purchase-form-section">
+            <div id="purchase-form-container">
+                <h2>Purchase Form</h2>
+                <form id="purchase-form" action="/submit-purchase" method="post">
+                    <input  id="moto-name" name="moto-name">
+                    <input   id="moto-price" name="moto-price">
+                    <label for="buyer-name">Name:</label>
+                    <input type="text" id="buyer-name" name="buyer-name" required>
+                    <label for="buyer-email">Email:</label>
+                    <input type="email" id="buyer-email" name="buyer-email" required>
+                    <label for="buyer-phone">Phone:</label>
+                    <input type="tel" id="buyer-phone" name="buyer-phone" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Acheter des motos. Tous droits réservés.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

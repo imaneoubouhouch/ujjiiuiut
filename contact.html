@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#accueil-section">Accueil</a></li>
+                <li><a href="index.html#catalogue-section">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+        <section id="contact-section">
+            <div id="form-container">
+                <h2>Contact Us</h2>
+                <form id="contact-form" action="/submit-form" method="post">
+                    <table>
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message:</label></td>
+                            <td><textarea id="message" name="message" rows="4" required></textarea></td>
+                        </tr>
+                    </table>
+                    <button type="button" onclick="showContactConfirmation()">Envoyer</button>
+                </form>
+            </div>
+            <div id="confirmation-message">
+                <p>Votre message a été envoyé avec succès. Nous vous répondrons bientôt. Merci!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Acheter des motos. Tous droits réservés.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
